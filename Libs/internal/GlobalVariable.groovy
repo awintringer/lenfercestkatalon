@@ -14,51 +14,21 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 public class GlobalVariable {
      
     /**
-     * <p>Profile default : URL of the Application Under Test (AUT)</p>
-     */
-    public static Object URL
-     
-    /**
-     * <p>Profile default : A valid account used during the test</p>
-     */
-    public static Object password
-     
-    /**
-     * <p>Profile default : The password that has been encrypted used during the test</p>
-     */
-    public static Object encrypted_password
-     
-    /**
-     * <p>Profile default : A valid account used during the test</p>
+     * <p></p>
      */
     public static Object username
-     
-    /**
-     * <p></p>
-     */
-    public static Object element_timeout
-     
-    /**
-     * <p></p>
-     */
-    public static Object ticket_sample
      
 
     static {
         def allVariables = [:]        
-        allVariables.put('default', ['URL' : 'https://katalon.atlassian.net', 'password' : 'sPiHQ&YEa6ST`de+', 'encrypted_password' : 'KLAk0b2rAgvA1EV7zgpKiS/uV+5nc48Y', 'username' : 'demo@katalon.com', 'element_timeout' : 60, 'ticket_sample' : 'Ticket created at 1528442112968'])
-        allVariables.put('dev profile', allVariables['default'] + ['username' : 'bella'])
+        allVariables.put('default', [:])
+        allVariables.put('dev profile', allVariables['default'] + [:])
         allVariables.put('qa profile', allVariables['default'] + ['username' : 'tom'])
         
         String profileName = RunConfiguration.getExecutionProfile()
         
         def selectedVariables = allVariables[profileName]
-        URL = selectedVariables['URL']
-        password = selectedVariables['password']
-        encrypted_password = selectedVariables['encrypted_password']
         username = selectedVariables['username']
-        element_timeout = selectedVariables['element_timeout']
-        ticket_sample = selectedVariables['ticket_sample']
         
     }
 }

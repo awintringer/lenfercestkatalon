@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login Data Test</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5efd3f1e-7a72-482b-a20e-2ccc57c1d7bf</testCaseGuid>
+   <variable>
+      <defaultValue>'admin'</defaultValue>
+      <description></description>
+      <id>53d82d0d-7d0e-4887-abb1-7f938e34e53b</id>
+      <masked>false</masked>
+      <name>demo_usr</name>
+   </variable>
+   <variable>
+      <defaultValue>'password'</defaultValue>
+      <description></description>
+      <id>456d7962-3aef-4ab0-bc2e-92b5bbd9e95a</id>
+      <masked>false</masked>
+      <name>demo_pwd</name>
+   </variable>
+</TestCaseEntity>

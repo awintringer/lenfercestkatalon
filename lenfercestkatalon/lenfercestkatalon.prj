@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-   <description>This is sample project of UI testing for Jira System using Katalon Studio</description>
-   <name>Jira UI Tests with Katalon Studio</name>
+   <description></description>
+   <name>lenfercestkatalon</name>
    <tag></tag>
-   <UUID>cedae2b6-ef6a-4041-8c22-62cc4ca8e267</UUID>
+   <UUID>d4fb09c3-bd71-4663-9e7a-e508fb32d4e2</UUID>
    <migratedVersion>5.7.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
    <sourceContent>
