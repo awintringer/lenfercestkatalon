@@ -19,4 +19,11 @@
       <masked>false</masked>
       <name>demo_pwd</name>
    </variable>
+   <variable>
+      <defaultValue>'false'</defaultValue>
+      <description></description>
+      <id>1b626476-04bd-428a-960f-901fa72bc639</id>
+      <masked>false</masked>
+      <name>is_valid</name>
+   </variable>
 </TestCaseEntity>

@@ -25,22 +25,21 @@ WebUI.setText(findTestObject('Page_CURA Healthcare Service/input_Password_passwo
 
 WebUI.click(findTestObject('Page_CURA Healthcare Service/button_Login'))
 
-if (WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/button_Book Appointment'), 0)) {
-    
-	WebUI.setText(findTestObject('Page_CURA Healthcare Service/input_Visit Date (Required)_vi'), '19/09/2018')
-	
-	WebUI.setText(findTestObject('Page_CURA Healthcare Service/textarea_Comment_comment'), 'cc laule')
-	
-	WebUI.click(findTestObject('Page_CURA Healthcare Service/button_Book Appointment'))
-	
-	WebUI.click(findTestObject('Page_CURA Healthcare Service/a_Go to Homepage'))
-	
-	WebUI.closeBrowser()
-}
+if (is_valid == 'true') {
+    WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/button_Book Appointment (1)'), 0)
 
-else {
-	WebUI.closeBrowser()
-	
-	throw new com.kms.katalon.core.exception.StepFailedException()
+    WebUI.setText(findTestObject('Page_CURA Healthcare Service/input_Visit Date (Required)_vi'), '19/09/2018')
+
+    WebUI.setText(findTestObject('Page_CURA Healthcare Service/textarea_Comment_comment'), 'cc laule')
+
+    WebUI.click(findTestObject('Page_CURA Healthcare Service/button_Book Appointment'))
+
+    WebUI.click(findTestObject('Page_CURA Healthcare Service/a_Go to Homepage'))
+
+    WebUI.closeBrowser()
+} else if (is_valid == 'false') {
+    WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/p_Login failed Please ensure t'), 0)
+
+    WebUI.closeBrowser()
 }
 
